@@ -1,0 +1,103 @@
+﻿@model erplite.Models.NewContractorClass
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Contractor</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-8">
+            <table class="table table-hover" width="100%">
+                <tbody>
+                    <tr>
+                        <th scope="row" width="25%">
+                            @Html.DisplayNameFor(model => model.id)
+                        </th>
+                        <th>
+                            @Html.DisplayFor(model => model.id)
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="row" width="25%">
+                            @Html.DisplayNameFor(model => model.name)
+                        </th>
+                        <th>
+                            @Html.DisplayFor(model => model.name)
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="row" width="25%">
+                            @Html.DisplayNameFor(model => model.street)
+                        </th>
+                        <th>
+                            @Html.DisplayFor(model => model.street)
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="row" width="25%">
+                            @Html.DisplayNameFor(model => model.house_number)
+                        </th>
+                        <th>
+                            @Html.DisplayFor(model => model.house_number)
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="row" width="25%">
+                            @Html.DisplayNameFor(model => model.resort)
+                        </th>
+                        <th>
+                            @Html.DisplayFor(model => model.resort)
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="row" width="25%">
+                            @Html.DisplayNameFor(model => model.zip_code)
+                        </th>
+                        <th>
+                            @Html.DisplayFor(model => model.zip_code)
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="row" width="25%">
+                            @Html.DisplayNameFor(model => model.nip)
+                        </th>
+                        <th>
+                            @Html.DisplayFor(model => model.nip)
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="row" width="25%">
+                            @Html.DisplayNameFor(model => model.pesel)
+                        </th>
+                        <th>
+                            @Html.DisplayFor(model => model.pesel)
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="row" width="25%">
+                            @Html.DisplayNameFor(model => model.email)
+                        </th>
+                        <th>
+                            @Html.DisplayFor(model => model.email)
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="row" width="25%">
+                            @Html.DisplayNameFor(model => model.addition)
+                        </th>
+                        <th>
+                            @Html.DisplayFor(model => model.addition)
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+</div>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id}, new { @class = "btn btn-outline-primary btn-sm" }) |
+    <a asp-action="Index"><button type="button" class="btn btn-outline-info btn-sm">Back</button></a>
+</div>
